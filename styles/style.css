@@ -131,7 +131,6 @@ span{
 .foto_caca{
     border-radius: 60px;
     width: 450px;
-    padding-left: 20px;
 }
 
 .txt_sbm{
@@ -216,10 +215,7 @@ section.portfolio .flex{
  .contato h5{
     font-weight: 500;
  }
-
-
  
-
 form{
     max-width: 500px;
     margin: 0 auto;
@@ -253,7 +249,6 @@ form textarea{
 .btn_enviar{
     margin-top: 10px; 
     border-radius: 6px;
-    
 }
 
 .btn_enviar input[type=submit]{
@@ -284,6 +279,7 @@ footer{
 .txt_footer{
     font-size: 24px;
     text-align: center;
+    
 
 }
 
@@ -335,4 +331,98 @@ footer{
 
 .copy_footer{
     margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    /* gerais */
+    
+    .flex{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 30px;  
+        text-align: center;
+        line-height: 30px; 
+    }
+    
+    /* header */
+    
+    header{
+        padding-top: 20px;
+    }
+
+    /* topo site */
+
+    .topo_site .flex{
+       flex-direction: column-reverse;
+       align-items: center;
+       display: flex;
+    }
+
+    .btn_social button{
+        display: none;
+    }
+
+    .txt_topo h2{
+        font-size: 30px;  
+        text-align: center;
+        line-height: 30px;  
+        padding: 0 4%;
+        line-break: auto;
+        
+    }
+    
+    
+    /* sobre mim */
+
+
+    .abt_me{
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    
+    .sobremim{
+        align-items: center;
+        padding: 40px 4%;
+    }
+
+    .img_sbm{
+        padding: 0;
+    }
+    img.foto_caca{
+        border-radius: 60px;
+        width: 400px;
+        padding-left: 9px;
+    }
+
+    /* portfólio */
+
+    .portfolio .flex{
+        align-items: center;
+    }
+
+    .img_port{
+        margin-top: 30px;
+    }
+
+    /* contato */
+
+    .portfolio{
+        padding: 0;
+    }
+    .portfolio .interface{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .op_ctt{
+        flex-direction: column;
+    }
+    
+    .contato_op{
+        width: 350px;
+        margin-top: 30px;
+    }
 }
